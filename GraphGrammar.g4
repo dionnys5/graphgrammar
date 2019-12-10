@@ -1,8 +1,13 @@
 grammar GraphGrammar;
 
 prog: graph* EOF;
-graph: VERTICE ARESTA VERTICE;
+graph: graph_name (config)* path+;
+graph_name: 'grafo ' NOME+ ':';
+config: ('tamanho=' NUMBER+ | 'cor=' CORES) ';';
+path: LETRA+ ('<')? '-' (NUMBER)? '-' ('>')? LETRA+;
 
-ARESTA: '->';
-VERTICE: [a-zA-Z]+;
+CORES: 'azul'|'vermelho'|'verde';
+LETRA: [a-zA-Z];
+NUMBER: [0-9];
+NOME: [a-zA-Z0-9]+;
 WS : [ \t\r\n]+ -> skip;

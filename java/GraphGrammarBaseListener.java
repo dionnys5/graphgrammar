@@ -34,42 +34,6 @@ public class GraphGrammarBaseListener implements GraphGrammarListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitGraph(GraphGrammarParser.GraphContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterGraph_name(GraphGrammarParser.Graph_nameContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitGraph_name(GraphGrammarParser.Graph_nameContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterConfig(GraphGrammarParser.ConfigContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitConfig(GraphGrammarParser.ConfigContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterPath(GraphGrammarParser.PathContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPath(GraphGrammarParser.PathContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

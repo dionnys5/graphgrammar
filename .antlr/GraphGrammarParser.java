@@ -1,4 +1,4 @@
-// Generated from GraphGrammar.g4 by ANTLR 4.7.2
+// Generated from c:\antlr\GraphGrammar.g4 by ANTLR 4.7.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class GraphGrammarParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.7.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -20,27 +20,18 @@ public class GraphGrammarParser extends Parser {
 		LETRA=10, NUMBER=11, NOME=12, WS=13;
 	public static final int
 		RULE_prog = 0, RULE_graph = 1, RULE_graph_name = 2, RULE_config = 3, RULE_path = 4;
-	private static String[] makeRuleNames() {
-		return new String[] {
-			"prog", "graph", "graph_name", "config", "path"
-		};
-	}
-	public static final String[] ruleNames = makeRuleNames();
+	public static final String[] ruleNames = {
+		"prog", "graph", "graph_name", "config", "path"
+	};
 
-	private static String[] makeLiteralNames() {
-		return new String[] {
-			null, "'grafo '", "':'", "'tamanho='", "'cor='", "';'", "'<'", "'-'", 
-			"'>'"
-		};
-	}
-	private static final String[] _LITERAL_NAMES = makeLiteralNames();
-	private static String[] makeSymbolicNames() {
-		return new String[] {
-			null, null, null, null, null, null, null, null, null, "CORES", "LETRA", 
-			"NUMBER", "NOME", "WS"
-		};
-	}
-	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
+	private static final String[] _LITERAL_NAMES = {
+		null, "'grafo '", "':'", "'tamanho='", "'cor='", "';'", "'<'", "'-'", 
+		"'>'"
+	};
+	private static final String[] _SYMBOLIC_NAMES = {
+		null, null, null, null, null, null, null, null, null, "CORES", "LETRA", 
+		"NUMBER", "NOME", "WS"
+	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
 	/**
@@ -90,7 +81,6 @@ public class GraphGrammarParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
-
 	public static class ProgContext extends ParserRuleContext {
 		public TerminalNode EOF() { return getToken(GraphGrammarParser.EOF, 0); }
 		public List<GraphContext> graph() {
@@ -103,14 +93,6 @@ public class GraphGrammarParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_prog; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).enterProg(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).exitProg(this);
-		}
 	}
 
 	public final ProgContext prog() throws RecognitionException {
@@ -169,14 +151,6 @@ public class GraphGrammarParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_graph; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).enterGraph(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).exitGraph(this);
-		}
 	}
 
 	public final GraphContext graph() throws RecognitionException {
@@ -238,14 +212,6 @@ public class GraphGrammarParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_graph_name; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).enterGraph_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).exitGraph_name(this);
-		}
 	}
 
 	public final Graph_nameContext graph_name() throws RecognitionException {
@@ -296,14 +262,6 @@ public class GraphGrammarParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_config; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).enterConfig(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).exitConfig(this);
-		}
 	}
 
 	public final ConfigContext config() throws RecognitionException {
@@ -372,14 +330,6 @@ public class GraphGrammarParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_path; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).enterPath(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof GraphGrammarListener ) ((GraphGrammarListener)listener).exitPath(this);
-		}
 	}
 
 	public final PathContext path() throws RecognitionException {
