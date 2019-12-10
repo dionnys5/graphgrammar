@@ -25,7 +25,7 @@ public class GraphGrammarParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'grafo '", "':'", "'tamanho='", "'cor='", "';'", "'<'", "'-'", 
+		null, "'grafo '", "':'", "'tamanho='", "'forma='", "';'", "'<'", "'-'", 
 		"'>'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
